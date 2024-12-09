@@ -155,24 +155,49 @@ body{
     border-radius: 8px;
 }
 
-.rodapé{
-    background-color: var(--azul-claro);
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
+footer.contato{
+    background-color: #0d1b2a;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+footer .titulo{
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5em;
 }
 
 .lista-rodapé{
-    list-style-type: none;
-}
-
-.lista-rodape_item{
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.link-rodapé_link{
+.lista-rodapé_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin: 1em;
+    max-width: 200px;
+}
+
+.lista-rodapé_item img{
+    margin-bottom: 1em;
+}
+
+.lista-rodapé_item .link{
     text-decoration: none;
-    color: var(--cor-texto);
-    margin-left: 0.6em;
+    color: #00d4d8;
+    font-size: 1em;
+    word-break: break-word;
+}
+
+.lista-rodapé_item .link:hover{
+    text-decoration: underline;
 }
